@@ -20,4 +20,4 @@ This is a simple Todo List web application that I have built using HTML, CSS, an
 
 ## Demo
 
-You can view a live demo of the Todo List app (here)[https://j3wlius.github.io/todo-list/].
+You can view a live demo of the Todo List app [here](https://j3wlius.github.io/todo-list/).
