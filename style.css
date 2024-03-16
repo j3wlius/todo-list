@@ -1,0 +1,135 @@
+:root {
+  --font: 'Outfit', sans-serif;
+
+  --white-bg-color: #fff;
+  --color-one: #7768ae;
+  --color-two: #28112b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: var(--font);
+}
+
+input,
+button {
+  font: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, var(--color-two), var(--color-one));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-app {
+  background-color: var(--white-bg-color);
+  width: 90%;
+  max-width: 500px;
+  border-radius: 0.75rem;
+  box-shadow: 2px 2px 5px var(--color-one);
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block: 1.5rem;
+}
+
+.title img {
+  width: 3.125rem;
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+.input-div {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  margin: 0 auto 2rem;
+}
+
+.input-div button {
+  border: none;
+  color: #fff;
+  background-color: brown;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 0 1.25rem 1.25rem 0;
+  cursor: pointer;
+}
+
+.input-div button:hover {
+    opacity: 0.75;
+}
+
+input[type='text'] {
+  padding-left: 0.8rem;
+  border-radius: 1.25rem 0 0 1.25rem;
+  border: none;
+  outline: none;
+  background-color: #b4b4b4;
+  color: #000;
+}
+
+.tasks-div {
+  width: 90%;
+  margin: 0 auto 2rem;
+}
+
+.tasks li {
+  font-size: 1.063rem;
+  padding: 0.75rem 0.5rem 0.75rem 3.125rem;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.tasks li::before {
+    content: '';
+    position: absolute;
+    top: 0.75rem;
+    left: 0.5rem;
+    height: 1.75rem;
+    width: 1.75rem;
+    border-radius: 50%;
+    background-image: url('/images/unchecked.png');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.tasks li.checked {
+    text-decoration: line-through;
+    color: #555;
+}
+
+.tasks li.checked::before  {
+    background-image: url('./images/checked.png');
+}
+
+.tasks li span {
+    display: inline-block;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 0.5rem;
+}
+
+.tasks li span:hover {
+    color: #dc143c;
+}
