@@ -10,7 +10,6 @@ This is a simple Todo List web application that I have built using HTML, CSS, an
 
 - **Delete Task:** Users can delete tasks from the list by clicking the cross icon on the right of each task.
 
-
 ## Technologies Used
 
 - **HTML:** I used HTML for structuring the webpage and creating the user interface elements.
@@ -19,3 +18,6 @@ This is a simple Todo List web application that I have built using HTML, CSS, an
 
 - **JavaScript:** I used Javascript for implementing the interactive features of the Todo List app like adding tasks, checking completed tasks & deleting tasks.
 
+## Demo
+
+You can view a live demo of the Todo List app (here)[https://j3wlius.github.io/todo-list/].
